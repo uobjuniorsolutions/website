@@ -34,6 +34,13 @@ class _card2State extends State<card2> {
         ),
         child: Container(
 
+          width: 470,
+          height: 300,
+
+
+
+
+
           child: SizedBox(
             width: 470,
             height: 300,
@@ -42,6 +49,7 @@ class _card2State extends State<card2> {
 
             Column(
               children: [
+
                 SizedBox(height: 110,),
                 Text(widget.s, style: TextStyle(fontSize: 35)),
                 SizedBox(height: 20,),
@@ -73,8 +81,11 @@ class _card2State extends State<card2> {
             ),
             image: DecorationImage(
 
+
+
+
               opacity: 0,
-              image: AssetImage(widget.i),
+              image: AssetImage(widget.i,),
               fit: BoxFit.fitWidth,
               alignment: Alignment.topCenter,
             ),

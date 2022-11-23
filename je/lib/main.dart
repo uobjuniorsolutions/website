@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         initialRoute: '/home',
         routes: {
-          '/home' : (context) => ResponsiveWidget(largeScreen: large(),smallScreen: small(),mediumScreen:home(), reallysmallScreen : reallysmall() ,phone: Phone()  ),
+          '/home' : (context) => ResponsiveWidget(largeScreen: reallysmall(),smallScreen: reallysmall(),mediumScreen:reallysmall(), reallysmallScreen : reallysmall() ,phone: Phone()  ),
 
 
         }

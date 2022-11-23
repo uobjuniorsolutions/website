@@ -178,7 +178,7 @@ class _reallysmallState extends State<reallysmall> {
                           width: 700,
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(2, 0, 0, 0),
-                            child: Text('University & Company',
+                            child: Text('University & Industry',
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color:  Color(0xFF98BDD8), // try this blue
@@ -202,7 +202,7 @@ class _reallysmallState extends State<reallysmall> {
                           width: 600,
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
-                            child: Text('We help you realize your digital business with software that suit your business  ',
+                            child: Text('We help you realise your digital business with software that suit your business  ',
                               style: TextStyle(
                                 color: Colors.black,
 
@@ -638,7 +638,7 @@ class _reallysmallState extends State<reallysmall> {
                   children: [
                     Container(
 
-                      child: Center(child: Text('A question ?',
+                      child: Center(child: Text('A question?',
                         style: TextStyle(
                           color: Colors.black,
 
@@ -658,7 +658,7 @@ class _reallysmallState extends State<reallysmall> {
 
                     ),
                     SizedBox(height: 8,),
-                    Text('Do not hesitate to contact us !',
+                    Text('Do not hesitate to contact us!',
                       style: TextStyle(
                         color: Colors.grey[700],
 

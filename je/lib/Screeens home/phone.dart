@@ -136,7 +136,7 @@ class _PhoneState extends State<Phone> {
                   curve: Curves.ease,);
               }else if(value==choices[3]){
                 controllerOne.animateTo(
-                  3700, duration: Duration(milliseconds: 1000),
+                  3850, duration: Duration(milliseconds: 1000),
                   curve: Curves.ease,);
               }
             },
@@ -172,123 +172,113 @@ class _PhoneState extends State<Phone> {
 
 
                 SizedBox(height: 140,),
-                Row(
+                Container(
+                  height: 520,
+                  child: Row(
 
 
 
 
 
-                  children: [
-                    SizedBox(width: size.width/13,),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: size.width/13,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
 
-                      children: [
-                        Container(
-                          width: size.width/1.2,
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(0, 0, 70, 0),
-                            child: Text('Bridging the gap between ',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 50,
-                                fontWeight: FontWeight.w200,
-                                decoration: TextDecoration.none,
-
-
+                        children: [
+                          Container(
+                            width: size.width/1.2,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 0, 70, 0),
+                              child: Text('Bridging the gap between ',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 50,
+                                  fontWeight: FontWeight.w200,
+                                  decoration: TextDecoration.none,
 
 
 
 
 
-                              ),
-
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: 30,),
-                        Container(
-                          width: size.width/1.2,
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(2, 0, 0, 0),
-                            child: Text('University & Company',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                color:  Color(0xFF98BDD8), // try this blue
-                                fontSize: 70,
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.none,
 
 
-
-
-
+                                ),
 
                               ),
                             ),
                           ),
-                        ),
-
-                        SizedBox(height: 30,),
-
-                        Container(
-                          width: size.width/1.2,
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
-                            child: Text('We help you realize your digital business with software that suit your business  ',
-                              style: TextStyle(
-                                color: Colors.black,
-
-                                fontSize: 20,
-                                fontWeight: FontWeight.w200,
-                                decoration: TextDecoration.none,
+                          SizedBox(height: 30,),
+                          Container(
+                            width: size.width/1.2,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(2, 0, 0, 0),
+                              child: Text('University & Industry',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  color:  Color(0xFF98BDD8), // try this blue
+                                  fontSize: 70,
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
 
 
 
 
 
+
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(height: 30,),
+
+                          Container(
+                            width: size.width/1.2,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
+                              child: Text('We help you realise your digital business with software that suit your business  ',
+                                style: TextStyle(
+                                  color: Colors.black,
+
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w200,
+                                  decoration: TextDecoration.none,
+
+
+
+
+
+
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 40,),
+
+                          Container(
+                            height: 44.0,
+                            width: 240,
+                            decoration: BoxDecoration(gradient: LinearGradient(colors: [Color(0xFF98BDD8), Color(0xFFAEBDD8)]),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(20.0),
+                              ),
+                            ),
+
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(primary: Colors.transparent, shadowColor: Colors.transparent),
+                              child: Text('Get Started',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
 
                               ),
                             ),
                           ),
-                        ),
-                        SizedBox(height: 40,),
 
-                        Container(
-                          height: 44.0,
-                          width: 240,
-                          decoration: BoxDecoration(gradient: LinearGradient(colors: [Color(0xFF98BDD8), Color(0xFFAEBDD8)]),
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(20.0),
-                            ),
-                          ),
-
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(primary: Colors.transparent, shadowColor: Colors.transparent),
-                            child: Text('Get Started',
-                              style: TextStyle(
-                                fontSize: 20,
-                              ),
-
-                            ),
-                          ),
-                        ),
-
-                        SizedBox(height: 200),
-
-
-
-
-
-
-
-                      ],
-
-
-
-                    ),
+                          //SizedBox(height: 200),
 
 
 
@@ -297,66 +287,42 @@ class _PhoneState extends State<Phone> {
 
 
 
-                  ],
 
+                        ],
+
+
+
+                      ),
+
+
+
+
+
+
+
+
+
+
+                    ],
+
+                  ),
                 ),
 
-                Column(
-                  children: [
-                    Container(
+                SizedBox(height: 100,),
 
-                      child: Center(child: Text('About us?',
-                        style: TextStyle(
-                          color: Colors.black,
+                Container(
+                  height: 750,
+                  child: Column(
+                    children: [
+                      Container(
 
-                          fontSize: 50,
-                          fontWeight: FontWeight.normal,
-                          decoration: TextDecoration.none,
-
-
-
-
-
-
-                        ),
-                      ),
-                      ),
-
-
-                    ),
-                    SizedBox(height: 8,),
-
-
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xFF98BDD8),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(20.0),
-                        ),
-                      ),
-                      width: 110,
-                      height: 5,
-
-                    ),
-
-                    SizedBox(height : 70),
-
-
-
-                    Center(
-                      child: Container(
-                        width: size.width/2,
-                        child: Text('UoB Junior Solutions is a consulting firm that is run by University of Birmingham students. We provide digital solutions, data analytics and strategy services to individuals, small and medium companies, as well as institutions. Through the provision of these high quality services at competitive prices, we aim to aid and facilitate start-ups in their development.',
-                          style :TextStyle(
+                        child: Center(child: Text('About us',
+                          style: TextStyle(
                             color: Colors.black,
 
-                            fontSize: 20,
-                            fontWeight: FontWeight.w200,
+                            fontSize: 50,
+                            fontWeight: FontWeight.normal,
                             decoration: TextDecoration.none,
-                            letterSpacing: 0,
-                            height: 1.3,
-
-
 
 
 
@@ -364,39 +330,86 @@ class _PhoneState extends State<Phone> {
 
 
                           ),
-                          textAlign: TextAlign.center,),
-                      ),
-                    ),
-                    SizedBox(height: 70,),
-
-
-                    Container(
-                      height: 44.0,
-                      width: 240,
-                      decoration: BoxDecoration(gradient: LinearGradient(colors: [Color(0xFF98BDD8), Color(0xFFAEBDD8)]),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(20.0),
                         ),
+                        ),
+
+
                       ),
+                      SizedBox(height: 8,),
 
 
-
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(primary: Colors.transparent, shadowColor: Colors.transparent),
-                        child: Text('Read more',
-                          style: TextStyle(
-                            fontSize: 20,
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xFF98BDD8),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20.0),
                           ),
+                        ),
+                        width: 110,
+                        height: 5,
 
+                      ),
+
+                      SizedBox(height : 70),
+
+
+
+                      Center(
+                        child: Container(
+                          width: size.width/1.5,
+                          child: Text('UoB Junior Solutions is a consulting firm that is run by University of Birmingham students. We provide digital solutions, data analytics and strategy services to individuals, small and medium companies, as well as institutions. Through the provision of these high quality services at competitive prices, we aim to aid and facilitate start-ups in their development.',
+                            style :TextStyle(
+                              color: Colors.black,
+
+                              fontSize: 20,
+                              fontWeight: FontWeight.w200,
+                              decoration: TextDecoration.none,
+                              letterSpacing: 0,
+                              height: 1.3,
+
+
+
+
+
+
+
+
+                            ),
+                            textAlign: TextAlign.center,),
                         ),
                       ),
-                    ),
+                      SizedBox(height: 70,),
 
 
-                  ],
+                      Container(
+                        height: 44.0,
+                        width: 240,
+                        decoration: BoxDecoration(gradient: LinearGradient(colors: [Color(0xFF98BDD8), Color(0xFFAEBDD8)]),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20.0),
+                          ),
+                        ),
+
+
+
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(primary: Colors.transparent, shadowColor: Colors.transparent),
+                          child: Text('Brochure',
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+
+                          ),
+                        ),
+                      ),
+
+
+                    ],
+                  ),
                 ),
-                SizedBox(height: 180,),
+                SizedBox(height: 20,),
+
                 Column(
                   children: [
 
@@ -422,6 +435,8 @@ class _PhoneState extends State<Phone> {
 
                     ),
 
+
+
                     SizedBox(height: 8,),
 
 
@@ -437,16 +452,167 @@ class _PhoneState extends State<Phone> {
 
                     ),
 
-                    SizedBox(height: 30,),
 
-                    card2(s: 'Mobile Development', i: 'Assets/waves.png',c1:Color(0xffC9D6FF),c2:Color(0xffE2E2E2)),
-                    SizedBox(height: 70,),
-                    card2(s: 'Web Development',i: 'Assets/lines.png',c1:Color(0xffD66D75),c2:Color(0xffE29587)),
-                    SizedBox(height: 70,),
-                    card2(s: 'Data',i: 'Assets/lines.png',c1:Color(0xffAAFFA9),c2:Color(0xff11FFBD)),
-                    SizedBox(height: 70,),
+
+                    SizedBox(height: 60,),
+
+                    card2(s: 'Web Development',i: 'Assets/lines.png',c1:Color(0xff2193b0),c2:Color(0xff6dd5ed)),
+
+                    SizedBox(height: 0,),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      child: Container(
+                        //height: 300,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 40,),
+                            Text('Web Development',
+
+                              style: TextStyle(
+                                  fontSize: 20,
+
+                                  color: Colors.grey[500]
+                              ),
+                              textAlign: TextAlign.left,),
+
+                            SizedBox(height: 20,),
+                            Container(
+                              width: 480,
+                              child: Text('Lorem Ipsum is simply dummy text',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: 28,
+                                ),),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 60,),
+                    Container(
+                      height: 1,
+                      width: size.width/1.6,
+                      color: Colors.black,
+                    ),
+                    SizedBox(height: 60,),
+
+                    card2( s: 'Software Engineering', i: 'Assets/waves.png',c1:Color(0xffbdc3c7),c2:Color(0xff2c3e50)),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      child: Container(
+                        //height: 300,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 40,),
+                            Text('Software Engineer',
+
+                              style: TextStyle(
+                                  fontSize: 20,
+
+                                  color: Colors.grey[500]
+                              ),
+                              textAlign: TextAlign.left,),
+
+                            SizedBox(height: 20,),
+                            Container(
+                              width: 480,
+                              child: Text('Lorem Ipsum is simply dummy text',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: 28,
+                                ),),
+                            ),
+
+
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 60,),
+                    Container(
+                      height: 1,
+                      width: size.width/1.6,
+                      color: Colors.black,
+                    ),
+                    SizedBox(height: 60,),
+
+                    card2(s: 'Data',i: 'Assets/lines.png',c1:Color(0xffec6f66),c2:Color(0xfff3a183)),
+
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      child: Container(
+                        //height: 300,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 40,),
+                            Text('Data',
+
+                              style: TextStyle(
+                                  fontSize: 20,
+
+                                  color: Colors.grey[500]
+                              ),
+                              textAlign: TextAlign.left,),
+
+                            SizedBox(height: 20,),
+                            Container(
+                              width: 480,
+                              child: Text('Lorem Ipsum is simply dummy text,',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: 28,
+                                ),),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(height: 60,),
+                    Container(
+                      height: 1,
+                      width: size.width/1.6,
+                      color: Colors.black,
+                    ),
+                    SizedBox(height: 60,),
                     card2(s: 'Strategy', i: 'Assets/waves.png',c1:Color(
-                        0xffa2a6a2),c2:Color(0xff000C40)),
+                        0xd8000428),c2:Color(0xff004e92)),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      child: Container(
+                       // height: 300,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 40,),
+                            Text('Strategy',
+
+                              style: TextStyle(
+                                  fontSize: 20,
+
+                                  color: Colors.grey[500]
+                              ),
+                              textAlign: TextAlign.left,),
+
+                            SizedBox(height: 20,),
+                            Container(
+                              width: 480,
+                              child: Text('Lorem Ipsum is simply dummy text ',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: 28,
+                                ),),
+                            ),
+
+
+                          ],
+                        ),
+                      ),
+                    ),
+
 
 
 
@@ -461,7 +627,7 @@ class _PhoneState extends State<Phone> {
                   children: [
                     Container(
 
-                      child: Center(child: Text('A question ?',
+                      child: Center(child: Text('A question?',
                         style: TextStyle(
                           color: Colors.black,
 
@@ -726,88 +892,11 @@ class _PhoneState extends State<Phone> {
                 SizedBox(height: 100,),
 
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
+
                     Container(
-                      width: 300,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('UoB',
-                            style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.white,
-                              decoration: TextDecoration.none,
-
-                            ),
-                          ),
-                          SizedBox(height: 50,),
-
-                          Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                            style :TextStyle(
-                              color: Colors.black,
-
-                              fontSize: 20,
-                              fontWeight: FontWeight.w200,
-                              decoration: TextDecoration.none,
-                              letterSpacing: 0,
-                              height: 2,
-
-
-
-
-
-
-
-
-                            ),
-                          ),
-
-
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: 300,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Categories',
-                            style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.white,
-                              decoration: TextDecoration.none,
-
-                            ),
-                          ),
-                          SizedBox(height: 50,),
-
-                          Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                            style :TextStyle(
-                              color: Colors.black,
-
-                              fontSize: 20,
-                              fontWeight: FontWeight.w200,
-                              decoration: TextDecoration.none,
-                              letterSpacing: 0,
-                              height: 2,
-
-
-
-
-
-
-
-
-                            ),
-                          ),
-
-
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: 300,
+                      width: 200,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -825,7 +914,7 @@ class _PhoneState extends State<Phone> {
                             style :TextStyle(
                               color: Colors.black,
 
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w200,
                               decoration: TextDecoration.none,
                               letterSpacing: 0,
@@ -846,7 +935,7 @@ class _PhoneState extends State<Phone> {
                       ),
                     ),
                     Container(
-                      width: 300,
+                      width: 200,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -864,7 +953,7 @@ class _PhoneState extends State<Phone> {
                             style :TextStyle(
                               color: Colors.black,
 
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w200,
                               decoration: TextDecoration.none,
                               letterSpacing: 0,
