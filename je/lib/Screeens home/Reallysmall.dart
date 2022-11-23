@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:html';
 
 import 'package:flip_card/flip_card_controller.dart';
 import 'package:flutter/material.dart';
@@ -281,12 +282,13 @@ class _reallysmallState extends State<reallysmall> {
                               ),
                             ),
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+				downloadFile("/pitchbook/UOBJS_Presentation.pdf");},
                               style: ElevatedButton.styleFrom(
                                   primary: Colors.transparent,
                                   shadowColor: Colors.transparent),
                               child: Text(
-                                'Brochure',
+                                'Pitchbook',
                                 style: TextStyle(
                                   fontSize: 20,
                                 ),
@@ -387,54 +389,73 @@ class _reallysmallState extends State<reallysmall> {
                                 SizedBox(
                                   height: 15,
                                 ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(40, 0, 0, 0),
-                                  child: Container(
-                                    width: 480,
-                                    child: Text(
-                                      ' • Static Website Development,',
-                                      textAlign: TextAlign.left,
-                                      style: TextStyle(
-                                        fontSize: 28,
-                                      ),
+
+                                Row(
+                                  children: [
+                                    SizedBox(width: 20,),
+                                    Container(
+                                      height: 111,
+                                      width: 2.7,
+                                      color: Colors.black,
                                     ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 7,
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(40, 0, 0, 0),
-                                  child: Container(
-                                    width: 480,
-                                    child: Text(
-                                      ' • Ecommerce Website,',
-                                      textAlign: TextAlign.left,
-                                      style: TextStyle(
-                                        fontSize: 28,
-                                      ),
+
+
+                                    Column(
+                                      children: [
+
+                                        Padding(
+                                          padding:
+                                          const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                          child: Container(
+                                            width: 480,
+                                            child: Text(
+                                              ' Static Website Development',
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                fontSize: 28,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 7,
+                                        ),
+                                        Padding(
+                                          padding:
+                                          const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                          child: Container(
+                                            width: 480,
+                                            child: Text(
+                                              ' Ecommerce Website',
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                fontSize: 28,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 7,
+                                        ),
+                                        Padding(
+                                          padding:
+                                          const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                          child: Container(
+                                            width: 480,
+                                            child: Text(
+                                              ' Web Applications',
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                fontSize: 28,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  ],
                                 ),
-                                SizedBox(
-                                  height: 7,
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(40, 0, 0, 0),
-                                  child: Container(
-                                    width: 480,
-                                    child: Text(
-                                      ' • Web Applications.',
-                                      textAlign: TextAlign.left,
-                                      style: TextStyle(
-                                        fontSize: 28,
-                                      ),
-                                    ),
-                                  ),
-                                ),
+
                               ],
                             ),
                           ),
@@ -1073,4 +1094,9 @@ class _reallysmallState extends State<reallysmall> {
       ),
     );
   }
+}
+downloadFile(url) {
+  AnchorElement anchorElement = new AnchorElement(href: url);
+  anchorElement.download = "Pitch_Book";
+  anchorElement.click();
 }
