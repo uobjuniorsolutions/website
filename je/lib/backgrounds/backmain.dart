@@ -16,7 +16,7 @@ class _backmainState extends State<backmain> {
     return SingleChildScrollView(
       child: Container(
 
-        height:4500,
+        height:3960,
         width: size.width,
         child: Stack(
 
@@ -78,7 +78,7 @@ class _backmainState extends State<backmain> {
 
 
                 child: Container(
-                  height: 2000,
+                  height: 450,
                   width: size.width,
                   color:Color(0xff81b0d0),
                 )),
@@ -96,15 +96,15 @@ class _backmainState extends State<backmain> {
             ),),
             Positioned(
 
-          top : -20,
-          left: size.width/1.8,
+          top : -50,
+          left: size.width/1.9,
 
 
           child: Container(
 
             height: 700,
               width: 700,
-              child: Image(image: AssetImage('Assets/bls.png',),)),),
+              child: Image(image: AssetImage('Assets/logo2sansback.png',),height: 800,width: 800,)),),
 
 
         widget.child,

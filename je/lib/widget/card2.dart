@@ -30,7 +30,7 @@ class _card2State extends State<card2> {
         elevation: 20,
 
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
         ),
         child: Container(
 
@@ -51,17 +51,18 @@ class _card2State extends State<card2> {
               children: [
 
                 SizedBox(height: 110,),
-                Text(widget.s, style: TextStyle(fontSize: 35)),
+                Text(widget.s, style: TextStyle(fontSize: 35,
+                color: Colors.white)),
                 SizedBox(height: 20,),
                 Container(
                   decoration: BoxDecoration(
-                    color: Color(0xFF98BDD8),
+                    color: Colors.white,
                     borderRadius: BorderRadius.all(
                       Radius.circular(20.0),
                     ),
                   ),
                   width: 220,
-                  height: 5,
+                  height: 2,
 
                 ),
 

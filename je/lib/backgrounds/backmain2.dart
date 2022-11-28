@@ -16,7 +16,7 @@ class _backmain2State extends State<backmain2> {
     return SingleChildScrollView(
       child: Container(
 
-        height:5300,
+        height:5030,
         width: size.width,
         child: Stack(
 
@@ -61,19 +61,19 @@ class _backmain2State extends State<backmain2> {
 
             Positioned(
 
-                top : 3800,
+                top : 4050,
                 left: 0,
 
 
                 child: Container(
-                  height: 550,
+                  height: 1050,
                   width: size.width,
                   color:Color(0xff81b0d0).withOpacity(0.3),
                 )),
 
             Positioned(
 
-                top : 4350,
+                top : 4600,
                 left: 0,
 
 
