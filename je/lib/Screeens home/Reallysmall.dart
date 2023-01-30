@@ -35,8 +35,6 @@ class _reallysmallState extends State<reallysmall> {
   var url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
   AlertDialog alerte(context) {
     return AlertDialog(
-
-
       content: Container(
         height: 200,
         width: 300,
@@ -46,22 +44,14 @@ class _reallysmallState extends State<reallysmall> {
             Container(
               child: Text(
                 'Thank you for contacting us!',
-                style: TextStyle(
-
-                    fontSize: 25
-                ),
+                style: TextStyle(fontSize: 25),
                 textAlign: TextAlign.center,
               ),
             ),
-
-
-
-
           ],
         ),
       ),
       actions: [
-
         Center(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
@@ -69,10 +59,8 @@ class _reallysmallState extends State<reallysmall> {
               height: 44.0,
               width: 240,
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [
-                  Color(0xFF98BDD8),
-                  Color(0xFFAEBDD8)
-                ]),
+                gradient: LinearGradient(
+                    colors: [Color(0xFF98BDD8), Color(0xFFAEBDD8)]),
                 borderRadius: BorderRadius.all(
                   Radius.circular(10.0),
                 ),
@@ -94,11 +82,9 @@ class _reallysmallState extends State<reallysmall> {
             ),
           ),
         ),
-
       ],
     );
   }
-  
 
   ScrollController controllerOne = ScrollController();
 
@@ -136,8 +122,6 @@ class _reallysmallState extends State<reallysmall> {
             'user_message': info.message
           },
         }));
-
-
   }
 
   late bool showBorder = false;
@@ -149,7 +133,11 @@ class _reallysmallState extends State<reallysmall> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         toolbarHeight: 100,
-        title: Image.asset('Assets/logo2sansback.png',height: 110,width: 300,),
+        title: Image.asset(
+          'Assets/logo2sansback.png',
+          height: 110,
+          width: 300,
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 29, 0, 0),
@@ -247,7 +235,7 @@ class _reallysmallState extends State<reallysmall> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
                               child: Text(
-                                'We help you realise your digital business with software that suit your business  ',
+                                'We provide the digital services which you need to create and develop your business',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20,
@@ -264,17 +252,19 @@ class _reallysmallState extends State<reallysmall> {
                             height: 44.0,
                             width: 240,
                             decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                  colors: [Color(0xFF98BDD8), Color(0xFFAEBDD8)]),
+                              gradient: LinearGradient(colors: [
+                                Color(0xFF98BDD8),
+                                Color(0xFFAEBDD8)
+                              ]),
                               borderRadius: BorderRadius.all(
                                 Radius.circular(20.0),
                               ),
                             ),
                             child: ElevatedButton(
                               onPressed: () {
-
-                                controllerOne.animateTo(3000, duration: Duration( milliseconds: 1000), curve: Curves.ease);
-
+                                controllerOne.animateTo(3000,
+                                    duration: Duration(milliseconds: 1000),
+                                    curve: Curves.ease);
                               },
                               style: ElevatedButton.styleFrom(
                                   primary: Colors.transparent,
@@ -330,7 +320,7 @@ class _reallysmallState extends State<reallysmall> {
                           Container(
                             width: size.width / 2,
                             child: Text(
-                              'UoB Junior Solutions is a consulting firm that is run by University of Birmingham students. We provide digital solutions, data analytics and strategy services to individuals, small and medium companies, as well as institutions. Through the provision of these high quality services at competitive prices, we aim to aid and facilitate start-ups in their development.',
+                              'UoB Junior Solutions is a consulting firm that is run by University of Birmingham students. We provide digital solutions, data analytics and strategy services to individuals, small and medium companies, as well as institutions. Through the provision of these high quality services at competitive prices, we aim to aid and facilitate businesses in their development.',
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.black,
@@ -361,7 +351,9 @@ class _reallysmallState extends State<reallysmall> {
                               ),
                               child: ElevatedButton(
                                 onPressed: () {
-				downloadFile("/pitchbook/UOBJS_Presentation.pdf");},
+                                  downloadFile(
+                                      "/pitchbook/UOBJS_Presentation.pdf");
+                                },
                                 style: ElevatedButton.styleFrom(
                                     primary: Colors.transparent,
                                     shadowColor: Colors.transparent),
@@ -457,7 +449,7 @@ class _reallysmallState extends State<reallysmall> {
                                   Container(
                                     width: 480,
                                     child: Text(
-                                      'Increasing your online presence with:',
+                                      'Increase your online presence with:',
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                         fontSize: 28,
@@ -467,23 +459,21 @@ class _reallysmallState extends State<reallysmall> {
                                   SizedBox(
                                     height: 15,
                                   ),
-
                                   Row(
                                     children: [
-                                      SizedBox(width: 20,),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
                                       Container(
                                         height: 111,
                                         width: 2.7,
                                         color: Colors.black,
                                       ),
-
-
                                       Column(
                                         children: [
-
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -499,12 +489,12 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
-                                                ' Ecommerce Website',
+                                                ' E-commerce Website',
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                   fontSize: 28,
@@ -516,8 +506,8 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -533,7 +523,6 @@ class _reallysmallState extends State<reallysmall> {
                                       ),
                                     ],
                                   ),
-
                                 ],
                               ),
                             ),
@@ -578,10 +567,11 @@ class _reallysmallState extends State<reallysmall> {
                                   SizedBox(
                                     height: 15,
                                   ),
-
                                   Row(
                                     children: [
-                                      SizedBox(width: 20,),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
                                       Container(
                                         height: 111,
                                         width: 2.7,
@@ -590,8 +580,8 @@ class _reallysmallState extends State<reallysmall> {
                                       Column(
                                         children: [
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -607,7 +597,8 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -623,7 +614,8 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -639,7 +631,6 @@ class _reallysmallState extends State<reallysmall> {
                                       ),
                                     ],
                                   ),
-
                                 ],
                               ),
                             ),
@@ -694,25 +685,25 @@ class _reallysmallState extends State<reallysmall> {
                                   SizedBox(
                                     height: 15,
                                   ),
-
                                   Row(
                                     children: [
-                                      SizedBox(width: 20,),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
                                       Container(
                                         height: 111,
                                         width: 2.7,
                                         color: Colors.black,
                                       ),
-
                                       Column(
                                         children: [
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
-                                                ' Data Engineering,',
+                                                ' Data Engineering',
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                   fontSize: 28,
@@ -724,12 +715,12 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
-                                                ' Business Data Analysis,',
+                                                ' Business Data Analysis',
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                   fontSize: 28,
@@ -741,12 +732,12 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
-                                                ' Energy Data Analysis.',
+                                                ' Energy Data Analysis',
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                   fontSize: 28,
@@ -758,7 +749,6 @@ class _reallysmallState extends State<reallysmall> {
                                       ),
                                     ],
                                   ),
-
                                 ],
                               ),
                             ),
@@ -803,10 +793,11 @@ class _reallysmallState extends State<reallysmall> {
                                   SizedBox(
                                     height: 15,
                                   ),
-
                                   Row(
                                     children: [
-                                      SizedBox(width: 20,),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
                                       Container(
                                         height: 111,
                                         width: 2.7,
@@ -815,8 +806,8 @@ class _reallysmallState extends State<reallysmall> {
                                       Column(
                                         children: [
                                           Padding(
-                                            padding:
-                                            const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: const EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -832,7 +823,8 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -848,7 +840,8 @@ class _reallysmallState extends State<reallysmall> {
                                             height: 7,
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                            padding: EdgeInsets.fromLTRB(
+                                                20, 0, 0, 0),
                                             child: Container(
                                               width: 480,
                                               child: Text(
@@ -864,7 +857,6 @@ class _reallysmallState extends State<reallysmall> {
                                       ),
                                     ],
                                   ),
-
                                 ],
                               ),
                             ),
@@ -950,8 +942,8 @@ class _reallysmallState extends State<reallysmall> {
                                     width: 480,
                                     child: TextFormField(
                                       textAlign: TextAlign.left,
-                                      controller:
-                                          TextEditingController(text: info.name),
+                                      controller: TextEditingController(
+                                          text: info.name),
                                       onChanged: (val) {
                                         info.name = val;
                                       },
@@ -980,8 +972,8 @@ class _reallysmallState extends State<reallysmall> {
                                     width: 480,
                                     child: TextFormField(
                                       textAlign: TextAlign.left,
-                                      controller:
-                                          TextEditingController(text: info.email),
+                                      controller: TextEditingController(
+                                          text: info.email),
                                       onChanged: (val) {
                                         info.email = val;
                                       },
@@ -992,7 +984,6 @@ class _reallysmallState extends State<reallysmall> {
                                         }
                                         return null;
                                       },
-
                                       keyboardType: TextInputType.text,
                                       decoration: InputDecoration(
                                           hintText: 'Email',
@@ -1119,13 +1110,13 @@ class _reallysmallState extends State<reallysmall> {
                                 ),
                                 child: ElevatedButton(
                                   onPressed: () {
-
-                                    if(_formKey.currentState!.validate()){
+                                    if (_formKey.currentState!.validate()) {
                                       save();
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => reallysmall()));
+                                              builder: (context) =>
+                                                  reallysmall()));
                                       showDialog(
                                         context: context,
                                         builder: (BuildContext context) {
@@ -1133,9 +1124,6 @@ class _reallysmallState extends State<reallysmall> {
                                         },
                                       );
                                     }
-
-
-
                                   },
                                   style: ElevatedButton.styleFrom(
                                       primary: Colors.transparent,
@@ -1157,28 +1145,36 @@ class _reallysmallState extends State<reallysmall> {
                   SizedBox(
                     height: 20,
                   ),
-
-                  Text('Copyright © UOB Junior Solution 2022',
-                    style: TextStyle(
-                        color: Colors.white
-                    ),
+                  Text(
+                    'Copyright © UOB Junior Solution 2022',
+                    style: TextStyle(color: Colors.white),
                   ),
-
                   Container(
                     width: size.width,
                     child: Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-
-                          IconButton(onPressed: (){ _launchURL1(Uri.parse("https://www.instagram.com/uobjuniorsolutions/"));}, icon: Icon(FontAwesomeIcons.instagram),iconSize: 30,),
-                          IconButton(onPressed: (){ _launchURL1(Uri.parse("https://uk.linkedin.com/company/uob-junior-solutions?original_referer=https%3A%2F%2Fwww.google.com%2F"));}, icon: Icon(FontAwesomeIcons.linkedin),iconSize: 30,),
-
+                          IconButton(
+                            onPressed: () {
+                              _launchURL1(Uri.parse(
+                                  "https://www.instagram.com/uobjuniorsolutions/"));
+                            },
+                            icon: Icon(FontAwesomeIcons.instagram),
+                            iconSize: 30,
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              _launchURL1(Uri.parse(
+                                  "https://uk.linkedin.com/company/uob-junior-solutions?original_referer=https%3A%2F%2Fwww.google.com%2F"));
+                            },
+                            icon: Icon(FontAwesomeIcons.linkedin),
+                            iconSize: 30,
+                          ),
                         ],
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -1187,15 +1183,16 @@ class _reallysmallState extends State<reallysmall> {
       ),
     );
   }
-  _launchURL1(var uri) async {
 
-    if (await canLaunchUrl(uri)){
+  _launchURL1(var uri) async {
+    if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
     } else {
       // can't launch url
     }
   }
 }
+
 downloadFile(url) {
   AnchorElement anchorElement = new AnchorElement(href: url);
   anchorElement.download = "Pitch_Book";
